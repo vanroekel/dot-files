@@ -1,0 +1,37 @@
+[user]
+	name = Douglas Jacobsen
+	email = jacobsen.douglas@gmail.com
+[core]
+	editor = vim
+	autocrlf = input
+	whitespace = trailing-space
+[giggle]
+	main-window-maximized = false
+	main-window-geometry = 944x754+213+24
+	main-window-view = HistoryView
+	file-view-vpane-position = 392
+	history-view-vpane-position = 456
+[web]
+	browser = google-chrome
+[alias]
+	logg = log --graph --oneline --abbrev-commit --decorate
+	export = !sh -c 'git archive ${1} | tar xv -C ${2}' -
+	st = status
+    up = fetch --all -p
+	co = checkout
+	rc = rebase --continue
+	path-br = "!bash -xc \"git checkout -b \"${PWD#${PWD%/*/*}/}\" MPAS-Dev/MPAS/develop\""
+	plg = log --graph --format=\"%CredH: %C(auto)%h %CredA: %Cblue %aE %Cred S: %Creset %s %C(auto) %d\"
+[color]
+	ui = true
+[merge]
+	tool = vimdiff
+	summary = true
+[github]
+	user = douglasjacobsen
+[push]
+	default = current
+[http]
+	proxy = 
+[rerere]
+	enabled = 1
